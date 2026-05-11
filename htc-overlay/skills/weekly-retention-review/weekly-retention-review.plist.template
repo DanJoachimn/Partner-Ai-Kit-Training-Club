@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+    <key>Label</key>
+    <string>com.[USER].[AI_NAME].weekly-retention-review</string>
+
+    <key>ProgramArguments</key>
+    <array>
+        <string>/bin/bash</string>
+        <string>-c</string>
+        <string>cd "$HOME/Documents/[AI_NAME]" &amp;&amp; /opt/homebrew/bin/claude -p "Run the weekly-retention-review skill — Sunday-night member-risk dashboard." 2&gt;&gt; "$HOME/Documents/[AI_NAME]/logs/weekly-retention-review.err"</string>
+    </array>
+
+    <key>EnvironmentVariables</key>
+    <dict>
+        <key>HOME</key>
+        <string>/Users/[USER]</string>
+        <key>PATH</key>
+        <string>/opt/homebrew/bin:/usr/local/bin:/usr/bin:/bin</string>
+    </dict>
+
+    <key>StartCalendarInterval</key>
+    <dict>
+        <key>Weekday</key>
+        <integer>0</integer>
+        <key>Hour</key>
+        <integer>19</integer>
+        <key>Minute</key>
+        <integer>0</integer>
+    </dict>
+
+    <key>RunAtLoad</key>
+    <false/>
+
+    <key>StandardOutPath</key>
+    <string>/Users/[USER]/Documents/[AI_NAME]/logs/weekly-retention-review.out</string>
+
+    <key>StandardErrorPath</key>
+    <string>/Users/[USER]/Documents/[AI_NAME]/logs/weekly-retention-review.err</string>
+</dict>
+</plist>
