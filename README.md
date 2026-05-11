@@ -162,6 +162,18 @@ MIT — fork it, modify it, sell something built on top of it. If you publish so
 
 ---
 
+## Stay in touch — The HTC Community
+
+The kit installs the foundation. **The ROXIE Stacked** Substack is where the conversation continues — tactical playbooks for running an HTC with an AI partner, real reports from other operators, and new skills shipping with the operator context that made them necessary.
+
+→ [https://theroxiestacked.substack.com](https://theroxiestacked.substack.com)
+
+Free now. Paid tier coming with community access + monthly office hours + early skill drops. Full details in [`STAY_IN_TOUCH.md`](./STAY_IN_TOUCH.md).
+
+No email required to install. No tracking. The campfire's there if you want it.
+
+---
+
 ## Help, feedback, bug reports
 
 Open a [GitHub issue](https://github.com/DanJoachimn/Partner-Ai-Kit-Training-Club/issues).
