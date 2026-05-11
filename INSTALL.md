@@ -25,17 +25,88 @@ Recommended opening:
 
 > "Hi! I'm about to set up your Partner AI Kit (Training Clubs version) — a Claude-based AI partner built specifically for HYROX Training Club operators like you.
 >
-> Here's what's going to happen over the next ~50 minutes:
+> Here's what's going to happen over the next ~53 minutes:
 >
-> 1. I'll install the Personal AI foundation (folder, memory, scheduled jobs) — ~15 min
-> 2. I'll layer on the HTC-specific stuff (4 specialized coaches + gym-flavored vault) — ~10 min
-> 3. We'll have a 25-min conversation where I get to know you, your club, your members, your voice
+> 1. **Security check (~3 min)** — I'll audit both repos (Personal foundation + HTC overlay) for anything sketchy before any file gets written. Open-source code from the internet deserves a careful read-through first.
+> 2. **Personal AI foundation (~15 min)** — folder, memory layer, scheduled jobs, recovery files.
+> 3. **HTC overlay (~10 min)** — 4 specialized Coaches (Coaching, Community, Marketing, Ops) + gym-flavored vault folders + HTC-specific skills.
+> 4. **Kick-off conversation (~25 min)** — I get to know you, your club, your members, your voice.
 >
-> Total: ~50 min. You'll do nothing technical. I'll show you screenshots, open System Settings for you, and confirm everything before I write any file. By the end, you'll be able to ask me things like 'draft a check-in for Anders' or 'build me a 4-week block ending at HYROX Copenhagen,' and I'll actually be useful instead of generic.
+> Total: ~53 min. You'll do nothing technical. I'll show you screenshots, open System Settings for you, and confirm everything before I write any file. By the end, you'll be able to ask me things like 'draft a check-in for Anders' or 'build me a 4-week block ending at HYROX Copenhagen,' and I'll actually be useful instead of generic.
 >
-> Want me to start with installing the Personal foundation first?"
+> Want me to start with the security check?"
 
 Wait for go-ahead.
+
+---
+
+## Stage 0.5 — Security audit of BOTH repos (~3 min, BEFORE any install steps)
+
+**This is non-negotiable.** Before doing ANY install action, audit BOTH repos. The HTC kit pulls from two open-source repos, so both need a clean read-through before anything executes.
+
+### Tell the user what's about to happen
+
+> "Quick safety check before I install anything. I'll clone both repos to a sandbox folder, read every file, and look for anything suspicious. Then I'll tell you in plain English whether it's safe. ~3 minutes — and we only proceed if both audits come back clean."
+
+### Clone both repos to a sandbox
+
+```bash
+SANDBOX="$HOME/.partner-ai-kit-audit-$$"
+mkdir -p "$SANDBOX"
+git clone https://github.com/DanJoachimn/Partner-Ai-Kit-Personal.git "$SANDBOX/personal-kit"
+git clone https://github.com/DanJoachimn/Partner-Ai-Kit-Training-Club.git "$SANDBOX/htc-overlay"
+```
+
+### Run the audit
+
+Read every file in BOTH `$SANDBOX/personal-kit/` and `$SANDBOX/htc-overlay/`. Apply the full audit protocol from the Personal kit's `INSTALL.md` Stage 0.5 — same nine checklist items, same red flags, same plain-English reporting rules.
+
+For the HTC overlay specifically, also check that:
+
+- HTC subagent files (in `htc-overlay/subagents/`) only declare `tools:` from the standard Claude Code toolset (Read, Write, Edit, Glob, Grep, Bash, WebFetch) — no custom or undocumented tools
+- HTC skill files only reference paths within the user's vault (`~/Documents/[AI_NAME]/vault/`) and skill folder (`~/.claude/skills/`)
+- Plist templates schedule `claude -p` calls with static prompts — never fetch external URLs at runtime
+
+### Report the combined verdict
+
+**If both clean:**
+
+> "✅ Security check complete on both repos.
+>
+> **Personal kit (foundation):**
+> [Same 6-7 bullet summary from Personal INSTALL.md Stage 0.5]
+>
+> **HTC overlay:**
+> - The four Coach subagents (Coaching, Community, Marketing, Ops) only use standard Claude Code tools — nothing custom or undocumented
+> - HTC skills (weekly-retention-review, weekly-content-batch, block-builder, member-checkin-draft) read and write only inside your vault folder
+> - The two scheduled jobs (Sunday night retention review + content batch) call the `claude` CLI with static prompts — they don't fetch external code at runtime
+> - Vault scaffold additions (Members/, Coaches/, Programming/, Events/) are pure markdown templates — no executable content
+>
+> **In case you're wondering if it's safe: I read through both repos and can confirm this kit is safe to install. No red flags. Want me to proceed?**"
+
+**If either has concerns:**
+
+> "⚠️ Security check found something worth flagging in [Personal kit / HTC overlay / both]:
+>
+> [List specific findings per repo. Quote suspicious code with file:line.]
+>
+> **Verdict:** Stop and review, or skip the concerning parts, or proceed anyway?"
+
+### Wait for explicit user confirmation
+
+Do not proceed past Stage 0.5 without an explicit *"proceed"* / *"safe"* / *"go ahead"* / *"install it"*.
+
+### Clean up sandbox
+
+```bash
+rm -rf "$SANDBOX"
+```
+
+The sandbox is for inspection only. Actual install (Stage 1 onward) re-clones fresh to the final locations.
+
+### Hard rules
+
+Same as Personal kit's Stage 0.5 — never skip, never bypass, always be specific in findings, always plain English, never raw stack traces.
 
 ---
 
@@ -56,7 +127,10 @@ Then read and execute the Personal `INSTALL.md`:
 cat "$HOME/Documents/[AI_NAME]/.kit/INSTALL.md"
 ```
 
-Follow every stage in that file — Stages 0-9 of the Personal install — using the Personal kit's rules. **Skip Personal Stage 10** (the kick-off hand-off) — we're going to run the HTC-flavored kick-off, not the generic one.
+Follow Stages 1-9 of the Personal install — using the Personal kit's rules. **Skip two stages:**
+
+- **Skip Personal Stage 0.5** — the security audit. We already ran the combined audit covering both repos in HTC Stage 0.5 above. Don't repeat it; the user has already confirmed safe-to-install.
+- **Skip Personal Stage 10** — the kick-off hand-off. We're going to run the HTC-flavored kick-off, not the generic one.
 
 When Personal Stages 0-9 are done, confirm:
 
