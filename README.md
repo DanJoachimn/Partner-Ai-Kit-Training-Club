@@ -164,13 +164,17 @@ MIT — fork it, modify it, sell something built on top of it. If you publish so
 
 ## Stay in touch — The HTC Community
 
-The kit installs the foundation. **The ROXIE Stacked** Substack is where the conversation continues — tactical playbooks for running an HTC with an AI partner, real reports from other operators, and new skills shipping with the operator context that made them necessary.
+The kit installs the foundation. **The ROXIE Stacked** Substack is where it gets sharper:
 
-→ [https://theroxiestacked.substack.com](https://theroxiestacked.substack.com)
+- **First word when new HTC skills ship** — block builders, retention skills, content patterns
+- **Tactical playbooks for running a modern training club** — retention systems that actually work, content batching that scales, race-week comms, programming anchors, member-onboarding sequences
+- **Real reports from other HTC operators** — wins, embarrassing first drafts, what broke, what you can copy
+- **New ways to grow + operate** without doubling your hours — operator-by-operator field reports
+- **Coming:** paid tier with community access (other HTC operators in a shared space), monthly office hours, early skill drops
 
-Free now. Paid tier coming with community access + monthly office hours + early skill drops. Full details in [`STAY_IN_TOUCH.md`](./STAY_IN_TOUCH.md).
+Free to start. → [https://theroxiestacked.substack.com](https://theroxiestacked.substack.com)
 
-No email required to install. No tracking. The campfire's there if you want it.
+Full details in [`STAY_IN_TOUCH.md`](./STAY_IN_TOUCH.md). No email required to install. No tracking. The campfire's there if you want it.
 
 ---
 
