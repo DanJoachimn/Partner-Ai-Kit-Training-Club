@@ -1,22 +1,19 @@
 # Stay in touch — The HTC Community
 
-You installed the kit. Your AI is running. Your members are flowing into Members/, your blocks are anchoring to races, your content is batching on Sundays. Now what?
+One optional thing:
 
-The work continues in **The ROXIE Stacked** — a Substack written for operators exactly like you.
+I publish a free substack — **The ROXIE Stacked** — for people I meet right here.
+
+→ [https://theroxiestacked.substack.com](https://theroxiestacked.substack.com)
 
 ---
 
-## The ROXIE Stacked | HTC Community
+## What you'd actually get
 
-**Link:** https://theroxiestacked.substack.com
-
-**What it is:** the place where the conversation continues after the kit installs. Tactical posts on running an HTC with an AI partner, plus a community of other operators figuring out the same stuff in real time.
-
-**What you'll find:**
-- **New skills shipping to this kit** — with the operator context that made them necessary. Every new skill comes with a *"here's the gym where this came from"* post.
-- **How other HTC operators are actually using their kit** — wins, embarrassing first drafts, what broke. No theory; field reports.
-- **Tactical playbooks** — retention systems, content batching, race-week comms, member-onboarding sequences, sales follow-up patterns. The stuff coaching certifications don't teach.
-- **The bigger picture** — what does running an HTC with an AI partner actually look like at month 3, month 12, month 24? Real numbers, real systems.
+- First word when new HTC skills ship to your kit
+- Tactical playbook for running a modern Training Club
+- Real reports from other operators — what's working, what flopped, what you can copy
+- New ways to grow + operate a modern training club
 
 **Cadence:** roughly weekly. I write when there's something operators can actually use, not on a content-calendar treadmill.
 

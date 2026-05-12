@@ -8,7 +8,7 @@
 
 The Personal Partner AI Kit + an HTC overlay. You get everything in the [Personal kit](https://github.com/DanJoachimn/Partner-Ai-Kit-Personal) — voice, memory, scheduled jobs, second brain — plus:
 
-- **4 HTC-specific subagents:** Coaching Coach, Community Coach, Marketing Coach, Ops Coach
+- **The 4 standard subagents** (same as the Personal kit): Content, Research, Developer, Assistant — used here for HTC operations
 - **Day-1 skills tuned for gym operators:** weekly retention review, weekly content batch, race-anchored block builder, member check-in drafter
 - **Vault scaffold for gym ops:** Members/, Coaches/, Programming/, Events/ folders pre-built with the right starter templates
 - **HYROX brand context** baked into the brand voice layer — race calendar awareness, programming vocabulary, member language
@@ -85,19 +85,19 @@ Start now.
 
 ## The four subagents
 
-Specialized AI workers your orchestrator calls when the task fits their lane:
+Specialized AI workers your orchestrator calls when the task fits their lane. Same four for everyone; new ones get added as real use cases emerge.
 
-### Coaching Coach (your programming partner)
-Owns workout programming, race-anchored block design, scaling decisions, athlete progressions. Knows the HYROX events (8 stations + runs), can draft week-by-week training blocks anchored to your members' upcoming races. Catches programming mistakes — *"this block has no aerobic base 3 weeks before race day."*
+### Content
+Video editing, writing, design. Drafts in your voice — social posts, newsletter copy, race-week comms, member-win celebrations, inquiry replies. Reads your Brand/Voice guide.md before every draft.
 
-### Community Coach (your retention partner)
-Owns member retention, traffic-light analysis (green/amber/red), birthday/milestone tracking, win-celebration drafting, lapsed-member follow-up. The subagent that knows every member's recent context — so when you ask *"how's Anders been doing?"* you get a real answer.
+### Research
+Deep-dives, sources, fact-checking. Pulls together background on members, suppliers, competing clubs, race results, HYROX news. Hands you the synthesis, not the raw search dump.
 
-### Marketing Coach (your content + sales partner)
-Owns content calendar, social posts, newsletter drafts, race promo, inquiry responses, trial-conversion follow-ups. Knows your club's voice + the HYROX brand layer. Drafts in your tone, not generic gym-marketing slop.
+### Developer
+Anything with code. Scripts to scrape your booking platform, automations to wire up new tools, custom integrations when no off-the-shelf option exists. Quiet most days; useful when needed.
 
-### Ops Coach (your admin partner)
-Owns email triage, calendar management, booking platform integration (Flexybox/Mindbody/Glofox), invoicing follow-ups, supplier management. The "behind the scenes" subagent that keeps your business running while you coach.
+### Assistant
+Daily admin — emails, calendar, scheduling, follow-ups, meeting-notes cleanup, action-item extraction. Reduces your mental load instead of adding to it.
 
 ---
 
@@ -150,7 +150,7 @@ Your AI fetches the latest, shows you what's new, asks before changing anything 
 
 Real talk about the roadmap. These are on the list but not in V1:
 
-- **Flexybox / Mindbody / Glofox MCP integrations** — Coming Q3 2026. Currently the Ops Coach can read your data if you paste/export it; direct API hookup is the next big unlock.
+- **Flexybox / Mindbody / Glofox MCP integrations** — Coming Q3 2026. Currently the Assistant subagent can read your data if you paste/export it; direct API hookup is the next big unlock.
 - **HYROX race calendar feed** — Manual entry for now. Live feed planned once HYROX exposes one.
 - **Native dashboard UI** — The kit lives entirely inside Claude Code Desktop. A custom dashboard ("Pacer cockpit") is on the roadmap but not blocking — the chat interface is already the primary way operators use it.
 
@@ -164,17 +164,20 @@ MIT — fork it, modify it, sell something built on top of it. If you publish so
 
 ## Stay in touch — The HTC Community
 
-The kit installs the foundation. **The ROXIE Stacked** Substack is where it gets sharper:
+One optional thing before we finish:
 
-- **First word when new HTC skills ship** — block builders, retention skills, content patterns
-- **Tactical playbooks for running a modern training club** — retention systems that actually work, content batching that scales, race-week comms, programming anchors, member-onboarding sequences
-- **Real reports from other HTC operators** — wins, embarrassing first drafts, what broke, what you can copy
-- **New ways to grow + operate** without doubling your hours — operator-by-operator field reports
-- **Coming:** paid tier with community access (other HTC operators in a shared space), monthly office hours, early skill drops
+I publish a free substack — **The ROXIE Stacked** — for people I meet right here.
+
+- First word when new HTC skills ship to your kit
+- Tactical playbook for running a modern Training Club
+- Real reports from other operators — what's working, what flopped, what you can copy
+- New ways to grow + operate a modern training club
 
 Free to start. → [https://theroxiestacked.substack.com](https://theroxiestacked.substack.com)
 
-Full details in [`STAY_IN_TOUCH.md`](./STAY_IN_TOUCH.md). No email required to install. No tracking. The campfire's there if you want it.
+Coming: paid tier with community access (other HTC operators in a shared space), monthly office hours, early skill drops. Full details in [`STAY_IN_TOUCH.md`](./STAY_IN_TOUCH.md).
+
+No email required to install. No tracking. The campfire's there if you want it.
 
 ---
 

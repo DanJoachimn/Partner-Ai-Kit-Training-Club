@@ -29,7 +29,7 @@ Recommended opening:
 >
 > 1. **Security check (~3 min)** — I'll audit both repos (Personal foundation + HTC overlay) for anything sketchy before any file gets written. Open-source code from the internet deserves a careful read-through first.
 > 2. **Personal AI foundation (~15 min)** — folder, memory layer, scheduled jobs, recovery files.
-> 3. **HTC overlay (~10 min)** — 4 specialized Coaches (Coaching, Community, Marketing, Ops) + gym-flavored vault folders + HTC-specific skills.
+> 3. **HTC overlay (~10 min)** — gym-flavored vault folders (Members, Coaches, Programming, Events), HTC-specific skills, HYROX context templates. (The 4 standard subagents — Content, Research, Developer, Assistant — come from the Personal foundation in step 2.)
 > 4. **Kick-off conversation (~25 min)** — I get to know you, your club, your members, your voice.
 >
 > Total: ~53 min. You'll do nothing technical. I'll show you screenshots, open System Settings for you, and confirm everything before I write any file. By the end, you'll be able to ask me things like 'draft a check-in for Anders' or 'build me a 4-week block ending at HYROX Copenhagen,' and I'll actually be useful instead of generic.
@@ -63,9 +63,9 @@ Read every file in BOTH `$SANDBOX/personal-kit/` and `$SANDBOX/htc-overlay/`. Ap
 
 For the HTC overlay specifically, also check that:
 
-- HTC subagent files (in `htc-overlay/subagents/`) only declare `tools:` from the standard Claude Code toolset (Read, Write, Edit, Glob, Grep, Bash, WebFetch) — no custom or undocumented tools
-- HTC skill files only reference paths within the user's vault (`~/Documents/[AI_NAME]/vault/`) and skill folder (`~/.claude/skills/`)
+- HTC skill files (in `htc-overlay/skills/`) only reference paths within the user's vault (`~/Documents/[AI_NAME]/vault/`) and skill folder (`~/.claude/skills/`)
 - Plist templates schedule `claude -p` calls with static prompts — never fetch external URLs at runtime
+- Vault scaffold additions (`htc-overlay/vault-scaffold-additions/`) are pure markdown templates — no executable content
 
 ### Report the combined verdict
 
@@ -77,7 +77,6 @@ For the HTC overlay specifically, also check that:
 > [Same 6-7 bullet summary from Personal INSTALL.md Stage 0.5]
 >
 > **HTC overlay:**
-> - The four Coach subagents (Coaching, Community, Marketing, Ops) only use standard Claude Code tools — nothing custom or undocumented
 > - HTC skills (weekly-retention-review, weekly-content-batch, block-builder, member-checkin-draft) read and write only inside your vault folder
 > - The two scheduled jobs (Sunday night retention review + content batch) call the `claude` CLI with static prompts — they don't fetch external code at runtime
 > - Vault scaffold additions (Members/, Coaches/, Programming/, Events/) are pure markdown templates — no executable content
@@ -147,42 +146,13 @@ git clone https://github.com/DanJoachimn/Partner-Ai-Kit-Training-Club.git "$HOME
 
 Confirm:
 
-> "✅ Fetched the HTC overlay — 4 coach subagents, 5 Day-1 skills, gym-flavored vault additions, HYROX context templates."
+> "✅ Fetched the HTC overlay — 4 HTC skills, gym-flavored vault additions, HYROX context templates."
+
+(Note: subagents are NOT installed at this stage. The 4 standard subagents — Content, Research, Developer, Assistant — were already installed by the Personal kit foundation in Stage 1. HTC inherits those; we just add HTC-specific skills + scaffold on top.)
 
 ---
 
-## Stage 3 — Install the four Coach subagents (~15 sec)
-
-```bash
-COACHES_SRC="$HOME/Documents/[AI_NAME]/.htc-overlay/htc-overlay/subagents"
-COACHES_DST="$HOME/Documents/[AI_NAME]/.claude/agents"
-
-mkdir -p "$COACHES_DST"
-
-for coach in coaching-coach community-coach marketing-coach ops-coach; do
-  cp "$COACHES_SRC/$coach.md" "$COACHES_DST/$coach.md"
-  perl -i -pe "s/\[AI_NAME\]/[AI_NAME]/g; s/\[PARTNER_NAME\]/[PARTNER_NAME]/g;" "$COACHES_DST/$coach.md"
-done
-```
-
-Confirm with a mermaid diagram:
-
-```mermaid
-graph TB
-    YOU[You — gym owner] -->|talk to| ORCH[Me — orchestrator]
-    ORCH --> CC[Coaching Coach<br/>programming + race blocks]
-    ORCH --> CM[Community Coach<br/>retention + member context]
-    ORCH --> MC[Marketing Coach<br/>content + inquiries]
-    ORCH --> OC[Ops Coach<br/>booking + admin + email]
-    style YOU fill:#fff5e6,stroke:#cc7a00
-    style ORCH fill:#e6f0ff,stroke:#0052cc
-```
-
-> "✅ Installed your 4 coaches. From now on, when you ask me about programming I delegate to Coaching Coach; when you ask about a member I check with Community Coach; etc. You always talk to me — they work in the background."
-
----
-
-## Stage 4 — Install the HTC Day-1 skills (~20 sec)
+## Stage 3 — Install the HTC Day-1 skills (~20 sec)
 
 ```bash
 HTC_SKILLS_SRC="$HOME/Documents/[AI_NAME]/.htc-overlay/htc-overlay/skills"
@@ -207,7 +177,7 @@ Confirm:
 
 ---
 
-## Stage 5 — Install scheduled jobs for HTC skills (~10 sec)
+## Stage 4 — Install scheduled jobs for HTC skills (~10 sec)
 
 Two HTC skills run on schedule:
 
@@ -235,7 +205,7 @@ Confirm:
 
 ---
 
-## Stage 6 — Add HTC-specific vault folders (~10 sec)
+## Stage 5 — Add HTC-specific vault folders (~10 sec)
 
 ```bash
 ADDITIONS_SRC="$HOME/Documents/[AI_NAME]/.htc-overlay/htc-overlay/vault-scaffold-additions"
@@ -261,7 +231,7 @@ graph TD
 
 ---
 
-## Stage 7 — Apply HTC context templates (~5 sec)
+## Stage 6 — Apply HTC context templates (~5 sec)
 
 The HTC overlay has HTC-aware starter templates for the brand voice doc, ICP, and a starter "About this club" file.
 
@@ -286,7 +256,7 @@ Confirm:
 
 ---
 
-## Stage 8 — Hand off to the HTC-flavored kick-off (~25 min)
+## Stage 7 — Hand off to the HTC-flavored kick-off (~25 min)
 
 Now run the kick-off interview, but with HTC-specific variants for Section A (club context), Section B (voice — operator + member-facing), and Section C (programming defaults + race calendar).
 
