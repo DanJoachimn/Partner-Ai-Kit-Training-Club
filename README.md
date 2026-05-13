@@ -83,12 +83,14 @@ Start now.
 
 ---
 
-## The four subagents
+## Your four digital employees
 
-Specialized AI workers your orchestrator calls when the task fits their lane. Same four for everyone; new ones get added as real use cases emerge.
+Your AI ships with **four digital employees** — specialists your orchestrator hands tasks to when the work fits their lane. Same four for everyone; you'll add new ones (or teach the existing four new tricks) as real use cases emerge from running your gym.
+
+Think of it like hiring four people, each for a different domain. You talk to the chief of staff (the orchestrator). The chief of staff dispatches the right person.
 
 ### Content
-Video editing, writing, design. Drafts in your voice — social posts, newsletter copy, race-week comms, member-win celebrations, inquiry replies. Reads your Brand/Voice guide.md before every draft.
+Video editing, writing, design. Drafts in your voice — social posts, newsletter copy, race-week comms, member-win celebrations, inquiry replies. Reads your Brand/Voice guide before every draft.
 
 ### Research
 Deep-dives, sources, fact-checking. Pulls together background on members, suppliers, competing clubs, race results, HYROX news. Hands you the synthesis, not the raw search dump.
@@ -98,6 +100,8 @@ Anything with code. Scripts to scrape your booking platform, automations to wire
 
 ### Assistant
 Daily admin — emails, calendar, scheduling, follow-ups, meeting-notes cleanup, action-item extraction. Reduces your mental load instead of adding to it.
+
+**Teaching a digital employee a new task = adding a new "skill."** Once you've shown one of them how to handle something three weeks in a row, the AI will offer to make it a one-button task going forward. That's how the team gets sharper over time — they learn your operation by doing it with you.
 
 ---
 
