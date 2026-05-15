@@ -29,7 +29,7 @@ Recommended opening:
 >
 > 1. **Security check (~3 min)** — I'll audit both repos (Personal foundation + HTC overlay) for anything sketchy before any file gets written. Open-source code from the internet deserves a careful read-through first.
 > 2. **Personal AI foundation (~15 min)** — folder, memory layer, scheduled jobs, recovery files.
-> 3. **HTC overlay (~10 min)** — gym-flavored vault folders (Members, Coaches, Programming, Events), HTC-specific skills, HYROX context templates. (The 4 standard subagents — Content, Research, Developer, Assistant — come from the Personal foundation in step 2.)
+> 3. **HTC overlay (~10 min)** — gym-flavored vault folders (Members, Coaches, Programming, Events), HTC-specific skills, HYROX context templates. (The 5 standard subagents — Content, Research, Developer, Assistant, Design — come from the Personal foundation in step 2.)
 > 4. **Kick-off conversation (~25 min)** — I get to know you, your club, your members, your voice.
 >
 > Total: ~53 min. You'll do nothing technical. I'll show you screenshots, open System Settings for you, and confirm everything before I write any file. By the end, you'll be able to ask me things like 'draft a check-in for Anders' or 'build me a 4-week block ending at HYROX Copenhagen,' and I'll actually be useful instead of generic.
@@ -148,7 +148,7 @@ Confirm:
 
 > "✅ Fetched the HTC overlay — 4 HTC skills, gym-flavored vault additions, HYROX context templates."
 
-(Note: subagents are NOT installed at this stage. The 4 standard subagents — Content, Research, Developer, Assistant — were already installed by the Personal kit foundation in Stage 1. HTC inherits those; we just add HTC-specific skills + scaffold on top.)
+(Note: subagents are NOT installed at this stage. The 5 standard subagents — Content, Research, Developer, Assistant, Design — were already installed by the Personal kit foundation in Stage 1. HTC inherits those; we just add HTC-specific skills + scaffold on top.)
 
 ---
 

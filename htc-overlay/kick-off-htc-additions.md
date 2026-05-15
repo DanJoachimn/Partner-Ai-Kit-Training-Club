@@ -150,7 +150,7 @@ Same Personal kit framing PLUS one HTC-specific add:
 >
 > 3. **Tell me when something is recurring.** If you find yourself asking me to do the same thing every week, *'can we make this a skill?'* I'll turn it into a one-button thing.
 >
-> 4. **The four subagents work in the background.** When you ask for a draft, Content handles it; for a deep look-up, Research; for anything code-touching, Developer; for daily admin and follow-ups, Assistant. You always talk to me — they sit behind me. Over time you'll notice which one fires for what.
+> 4. **The five subagents work in the background.** When you ask for a draft, Content handles it; for a deep look-up, Research; for anything code-touching, Developer; for daily admin and follow-ups, Assistant; for visual / UX work — landing pages, social graphics, podcast art, design critique — Design steps in (Refero-grounded so it doesn't produce AI-slop). You always talk to me — they sit behind me. Over time you'll notice which one fires for what.
 >
 > That's it. Welcome to working with the team."
 
