@@ -17,6 +17,14 @@ All the hard rules from the Personal kit's INSTALL.md apply here (no jargon, con
 
 ---
 
+## Install runs in two parts (Part 1 + Part 2)
+
+**This is Part 1 (Foundation).** Fits in a single Pro plan session (~50 min, ~30-45 messages). Ends with an automatic voice-note from the user's AI delivered to their phone via Telegram, referencing their club by name. Part 2 (Reach) is a separate later session — deepens voice, adds premium voices and meeting capture, fills in the Training Club-flavored Section C+ (programming defaults, race calendar, member archetypes), wires up optional Training Club skills.
+
+The Part 1 / Part 2 split is **identical in intent** to the Personal kit's split — keeps the magic-prompt install within Pro plan token + message budgets and gives the user a working foundation before deepening.
+
+---
+
 ## Stage 0 — Greeting + tone-setting (~1 min)
 
 Open with Training Club context. Set expectations.
@@ -25,14 +33,16 @@ Recommended opening:
 
 > "Hi! I'm about to set up your Partner AI Kit (Training Clubs version) — a Claude-based AI partner built specifically for Training Club operators like you.
 >
-> Here's what's going to happen over the next ~53 minutes:
+> The install runs in two parts. **Part 1 — today (~50 min):** foundation, four digital employees, your four Training Club skills, scheduled retention review + content batch jobs, and a voice channel to your phone. Ends with an automatic voice-note from your AI on your phone — proof the whole thing works. **Part 2 — separate session, when you're ready (~30 min):** deepens your AI's voice, adds premium TTS, meeting capture, programming defaults + race calendar, member archetypes, and optional skills.
+>
+> Here's what's going to happen over the next ~50 minutes in Part 1:
 >
 > 1. **Security check (~3 min)** — I'll audit both repos (Personal foundation + Training Club overlay) for anything sketchy before any file gets written. Open-source code from the internet deserves a careful read-through first.
-> 2. **Personal AI foundation (~15 min)** — folder, memory layer, scheduled jobs, recovery files.
-> 3. **Training Club overlay (~10 min)** — Training Club-flavored vault folders (Members, Coaches, Programming, Events), Training Club-specific skills, HYROX context templates. (The 5 standard subagents — Content, Research, Developer, Assistant, Design — come from the Personal foundation in step 2.)
-> 4. **Kick-off conversation (~25 min)** — I get to know you, your club, your members, your voice.
+> 2. **Personal AI foundation Part 1 (~25 min)** — folder, memory layer, four digital employees, scheduled jobs, Telegram bridge, voice channel, recovery files. Ends with a voice-note from your AI on your phone.
+> 3. **Training Club overlay (~10 min)** — Training Club-flavored vault folders (Members, Coaches, Programming, Events), 4 Training Club-specific skills (weekly-retention-review, weekly-content-batch, block-builder, member-checkin-draft), HYROX context template stubs. (The 5 standard subagents — Content, Research, Developer, Assistant, Design — come from the Personal foundation in step 2.)
+> 4. **Quick Training Club opener (~8 min, 3 questions)** — name your club, name one active block or focus, and pick how you want me to push back. Just enough so the voice note in step 2 lands as personal. The deep Training Club kick-off (programming defaults, race calendar, member archetypes) is in Part 2.
 >
-> Total: ~53 min. You'll do nothing technical. I'll show you screenshots, open System Settings for you, and confirm everything before I write any file. By the end, you'll be able to ask me things like 'draft a check-in for Anders' or 'build me a 4-week block ending at HYROX Copenhagen,' and I'll actually be useful instead of generic.
+> Total: ~50 min. You'll do nothing technical. I'll show you screenshots, open System Settings for you, and confirm everything before I write any file. By the end, you'll be able to ask me things like 'draft a check-in for Anders' or 'build me a 4-week block ending at HYROX Copenhagen' — and the Sunday retention review + content batch jobs will fire automatically every week.
 >
 > Want me to start with the security check?"
 
@@ -109,9 +119,9 @@ Same as Personal kit's Stage 0.5 — never skip, never bypass, always be specifi
 
 ---
 
-## Stage 1 — Run the Personal kit install (~15 min)
+## Stage 1 — Run Personal kit Part 1 (~25 min)
 
-The Training Club kit DOES NOT duplicate the Personal install. Instead, it triggers the Personal install first.
+The Training Club kit DOES NOT duplicate the Personal install. Instead, it triggers Personal **Part 1** (Foundation) first.
 
 ```bash
 # Clone the Personal kit
@@ -120,20 +130,22 @@ cd "$HOME/Documents/[AI_NAME]"
 git clone https://github.com/DanJoachimn/Partner-Ai-Kit-Personal.git .kit
 ```
 
-Then read and execute the Personal `INSTALL.md`:
+Then read and execute Personal Part 1:
 
 ```bash
 cat "$HOME/Documents/[AI_NAME]/.kit/INSTALL.md"
 ```
 
-Follow Stages 1-9 of the Personal install — using the Personal kit's rules. **Skip two stages:**
+That's the Personal kit's Part 1 (Foundation) playbook. Run **all** of its stages — but with these two adjustments because we're inside the Training Club install:
 
-- **Skip Personal Stage 0.5** — the security audit. We already ran the combined audit covering both repos in Training Club Stage 0.5 above. Don't repeat it; the user has already confirmed safe-to-install.
-- **Skip Personal Stage 10** — the kick-off hand-off. We're going to run the Training Club-flavored kick-off, not the generic one.
+- **Skip Personal Stage 0.5** (security audit) — we already ran the combined audit covering both repos in Training Club Stage 0.5 above. Don't repeat it; the user has already confirmed safe-to-install.
+- **Personal Stage 5 (the 3-Q lightweight kick-off)** runs as written, EXCEPT pause before the question about "active project" — instead use the Training Club-flavored opener variant in Training Club Stage 7 below. (This swap is intentional: the 3-Q kick-off needs Training Club framing so the Stage 8 aha-moment voice note can reference the user's club + active block.)
 
-When Personal Stages 0-9 are done, confirm:
+When Personal Part 1 Stages 0-9 are done — including the Telegram bridge, voice setup, and the **voice-note aha-moment** in Personal Stage 8 — confirm:
 
-> "✅ Personal AI foundation installed. Folder created, vault scaffolded, 5 core skills installed, scheduled jobs wired up. Now layering on the Training Club stuff."
+> "✅ Personal AI foundation installed. Folder created, vault scaffolded, four digital employees on standby, Telegram bridge wired, voice channel live, voice-note aha-moment delivered. Now layering on the Training Club stuff."
+
+**Important:** at this point, the Personal kit's Stage 9 has NOT yet set `.part-1-complete`. That gets set at the **end** of the Training Club Part 1 install (Stage 8 below), once the Training Club overlay is fully layered on. This keeps "Part 1 complete" a single, accurate marker.
 
 ---
 
@@ -256,29 +268,91 @@ Confirm:
 
 ---
 
-## Stage 7 — Hand off to the Training Club-flavored kick-off (~25 min)
+## Stage 7 — Training Club-flavored 3-Q opener (~8 min, deferred deep kick-off to Part 2)
 
-Now run the kick-off interview, but with Training Club-specific variants for Section A (club context), Section B (voice — operator + member-facing), and Section C (programming defaults + race calendar).
+The deep Training Club kick-off (programming defaults, race calendar, member archetypes, full voice interview) is **deferred to Part 2** to keep Part 1 within a single Pro session. In Part 1 we run just three questions — enough to make the Stage 8 voice-note aha-moment land as personal and to seed the vault with club context.
 
-Read the Training Club kick-off additions:
+These three questions REPLACE the equivalent generic 3-Q in Personal Stage 5 (the install playbook deliberately routed there to here).
+
+### Question 1 — Club name + tone
+
+> "**What's your club called, and how should I sound when I talk about it?** Club name first (so I stop saying 'your club' generically). Then three words or one sentence on tone — examples: *'warm-direct, no fluff'* / *'sharp coach, push back on me'* / *'friendly, never corporate.'*"
+
+Save:
+- Club name → `~/Documents/[AI_NAME]/vault/_context/club-about.md` (top of file, replaces the placeholder `[CLUB_NAME]`)
+- Tone → `~/Documents/[AI_NAME]/vault/Brand/Voice guide.md`
+
+Also: run a placeholder substitution across the 4 Training Club skill files installed in Stage 3 — replace `[CLUB_NAME_PLACEHOLDER]` with the real club name:
 
 ```bash
-cat "$HOME/Documents/[AI_NAME]/.training-club-overlay/training-club-overlay/kick-off-training-club-additions.md" 2>/dev/null
+find ~/.claude/skills/{weekly-retention-review,weekly-content-batch,block-builder,member-checkin-draft} \
+  -type f -name "*.md" -print0 | \
+  xargs -0 perl -i -pe "s/\[CLUB_NAME_PLACEHOLDER\]/$CLUB_NAME/g"
 ```
 
-Then invoke `~/.claude/skills/kick-off/SKILL.md` with the Training Club additions layered in.
+### Question 2 — Active block or focus
 
-> "OK — technical setup is done. From here we have a 25-min conversation. I'll ask you about your club, your members, your voice, your programming style, your race calendar. By the end, I'll know enough about your operation to actually be useful when you ask me for help.
+> "**One active block or training focus right now** — two sentences. Could be a race-anchored block (*'8-week block ending at HYROX Copenhagen Oct 14'*), a general phase (*'strength block, no race target yet'*), or whatever you're running. Just enough that the voice note I send you in a few minutes can mention it."
+
+Save to `~/Documents/[AI_NAME]/vault/Projects/Current block.md` with frontmatter.
+
+### Question 3 — Working style preference
+
+> "**When I'm working with you, do you want me to push back when I disagree, or just deliver what you asked for?** No wrong answer — operators split about 50/50 on this."
+
+Save to `~/Documents/[AI_NAME]/vault/Working style.md` (one-line note).
+
+### Set the deferred-deep-kick-off marker
+
+```bash
+# Part 2 will pick up the deeper Training Club kick-off (Section C+ — programming
+# defaults, race calendar, member archetypes, full 5-Q voice).
+touch "$HOME/Documents/[AI_NAME]/.training-club-kick-off-cplus-pending"
+```
+
+---
+
+## Stage 8 — Mark Part 1 complete (~30 sec)
+
+Now wire up the same Part 1 completion flags Personal uses, plus a Training Club-specific marker so Part 2 knows to layer on the Training Club additions:
+
+```bash
+# Personal Part 1 completion markers (mirror Personal INSTALL.md Stage 9)
+touch ~/Documents/[AI_NAME]/.part-1-complete
+date -Iseconds > ~/Documents/[AI_NAME]/.part-1-date
+touch ~/Documents/[AI_NAME]/.voice-foundation-3q-complete
+touch ~/Documents/[AI_NAME]/.first-run-complete
+
+# Training Club-specific marker — Part 2 reads this to know it should layer on
+# Training Club additions (Section C+ deep fill) when the user invokes Part 2.
+touch ~/Documents/[AI_NAME]/.training-club-part-1-complete
+
+cat > ~/Documents/[AI_NAME]/.first-run-log.txt <<EOF
+First-run completed via Training Club Part 1 install: $(date -Iseconds)
+Voice tier: 3-Q foundation (Training Club-flavored)
+Training Club skills installed: weekly-retention-review, weekly-content-batch, block-builder, member-checkin-draft
+Vault folders added: Members/, Coaches/, Programming/, Events/
+Context template stubs seeded: club-about, brand-voice-training-club, ideal-member-profile, race-calendar-starter
+Pending: Part 2 (5-Q voice + Training Club Section C+ deep fill + premium voice + meeting capture + optional skills)
+User invokes Part 2 when ready: "run Part 2"
+EOF
+
+echo "$(date -Iseconds) — TRAINING CLUB PART 1 COMPLETE" >> ~/Documents/[AI_NAME]/logs/install.log
+```
+
+Close with:
+
+> "✅ Part 1 done. You've got:
+> - A working Partner AI with four digital employees behind it
+> - A voice channel from your phone (Telegram, hands-free)
+> - Four Training Club-specific skills installed
+> - Weekly retention review firing every Sunday 19:00 (your inbox Monday morning)
+> - Weekly content batch firing every Sunday 20:00 (next week's posts drafted for review)
+> - Voice-note aha-moment delivered — that's the partnership starting
 >
-> Ready to start, or want to take a break first?"
-
-If start now → invoke kick-off with Training Club additions.
-
-If break → flag pending:
-
-```bash
-touch "$HOME/Documents/[AI_NAME]/.kick-off-pending-training-club"
-```
+> **What's next:** Part 2 deepens everything — a 5-question voice interview, the deep Training Club kick-off (programming defaults, race calendar, member archetypes), premium voices, meeting capture, and optional skills. When you've used Part 1 for a few days and want more, just say **'run Part 2'**.
+>
+> For now: try asking me to draft a check-in for one of your members, or what's the most useful thing to spend 15 minutes on right now. That's the dynamic."
 
 ---
 
