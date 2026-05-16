@@ -7,7 +7,7 @@ updated: YYYY-MM-DD
 
 # Scaling Library — [CLUB_NAME]
 
-> Every scaling rule the club uses, organized by HYROX station. Coaching Coach pulls from this when [PARTNER_NAME] asks for scaling on a workout. Update when the club adopts a new scaling pattern.
+> Every scaling rule the club uses, organized by HYROX station. The `block-builder` skill pulls from this when [PARTNER_NAME] asks for scaling on a workout. Update when the club adopts a new scaling pattern.
 
 ---
 
@@ -85,7 +85,7 @@ updated: YYYY-MM-DD
 
 ## How to use this library
 
-When Coaching Coach is asked for scaling, it:
+When the `block-builder` skill is asked for scaling, it:
 
 1. Identifies the station in the workout
 2. Pulls the relevant section above

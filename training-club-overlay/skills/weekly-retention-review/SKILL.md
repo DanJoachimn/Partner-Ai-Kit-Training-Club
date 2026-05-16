@@ -7,7 +7,7 @@ description: Sunday-night automated review of every active member's traffic-ligh
 
 ## Purpose
 
-Most HTC operators run retention reactively — they notice a member dropped off after they're already gone. By then it's too late.
+Most Training Club operators run retention reactively — they notice a member dropped off after they're already gone. By then it's too late.
 
 This skill flips the loop: every Sunday night, [AI_NAME] reviews every active member's state, surfaces the top 3-5 at risk, suggests coach check-ins, and flags milestones for the coming week. [PARTNER_NAME] starts Monday with a clear picture instead of a reactive scramble.
 
@@ -118,7 +118,7 @@ When [PARTNER_NAME] replies to one of the one-button actions, hand off to the ap
 
 ## Setup checklist
 
-The kit's HTC INSTALL.md handles setup. Verifies:
+The kit's Training Club INSTALL.md handles setup. Verifies:
 1. Skill installed at `~/.claude/skills/weekly-retention-review/`
 2. Launchd plist installed + loaded for Sunday 19:00
 3. Telegram bridge present (or graceful fallback to chat if not)

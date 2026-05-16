@@ -1,6 +1,6 @@
 ---
 name: member-checkin-draft
-description: Generate a personalized check-in message for a specific member in [CLUB_NAME]'s voice. Reads the member's file (recent context, status, last interaction) and the club's brand voice guide, drafts a message that feels human and specific — not templated. Invoked when [PARTNER_NAME] says "draft a check-in for [member]," "follow up with [member]," or auto-invoked by weekly-retention-review for amber/red members. Community Coach owns this skill.
+description: Generate a personalized check-in message for a specific member in [CLUB_NAME]'s voice. Reads the member's file (recent context, status, last interaction) and the club's brand voice guide, drafts a message that feels human and specific — not templated. Invoked when [PARTNER_NAME] says "draft a check-in for [member]," "follow up with [member]," or auto-invoked by weekly-retention-review for amber/red members.
 ---
 
 # Member Check-in Draft — personalized, in-voice, ready-to-send

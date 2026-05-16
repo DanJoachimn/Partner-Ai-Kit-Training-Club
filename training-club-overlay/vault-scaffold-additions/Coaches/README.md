@@ -40,9 +40,9 @@ joined: YYYY-MM-DD
 
 ## How the AI uses these files
 
-- **Routing check-ins:** when Community Coach drafts a member check-in, it considers which coach has the primary relationship.
-- **Class brief generation:** Coaching Coach checks who's leading the class today.
-- **Schedule conflicts:** Ops Coach uses coach availability when proposing class schedule changes.
+- **Routing check-ins:** when your AI drafts a member check-in, it considers which coach has the primary relationship.
+- **Class brief generation:** your AI checks who's leading the class today.
+- **Schedule conflicts:** your AI uses coach availability when proposing class schedule changes.
 
 ## Hard rules
 

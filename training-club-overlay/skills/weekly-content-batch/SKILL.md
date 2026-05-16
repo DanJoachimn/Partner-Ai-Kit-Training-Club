@@ -7,7 +7,7 @@ description: Sunday-night batch generation of 7 days of social content for [CLUB
 
 ## Purpose
 
-HTC operators are content-starved. They know they should post 4-7 times a week. They don't have time to draft 4-7 times a week. So they post 1-2 times, feel guilty, fall behind, post a flurry, fall behind again.
+Training Club operators are content-starved. They know they should post 4-7 times a week. They don't have time to draft 4-7 times a week. So they post 1-2 times, feel guilty, fall behind, post a flurry, fall behind again.
 
 This skill kills the loop. Sunday night, [AI_NAME] drafts the entire upcoming week's content — anchored to events + member wins from this week — in the club's voice. [PARTNER_NAME] reviews on Monday morning, edits the few that need tweaking, schedules the batch. Done in 20 minutes for the whole week.
 
@@ -127,7 +127,7 @@ Append 1-line entry to daily-memory: *"Drafted 7 posts for week of [date]. Sarah
 
 ## Setup checklist
 
-Handled by HTC INSTALL.md. Verifies:
+Handled by Training Club INSTALL.md. Verifies:
 1. Skill at `~/.claude/skills/weekly-content-batch/`
 2. Launchd plist for Sunday 20:00
 3. Brand/Voice guide.md exists (otherwise the skill warns and asks [PARTNER_NAME] to fill it via kick-off first)

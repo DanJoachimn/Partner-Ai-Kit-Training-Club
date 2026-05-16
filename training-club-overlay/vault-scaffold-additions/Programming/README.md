@@ -9,7 +9,7 @@ Where [CLUB_NAME]'s coaching content lives. Subfolders:
 
 - **`blocks/`** — race-anchored training blocks (output of `block-builder` skill). One file per block, named by date range. Example: `2026-08-19-to-2026-10-14.md` (8 weeks ending at Copenhagen).
 - **`benchmarks/`** — standard benchmark sessions to test progress over time. 5k row, 1k erg, max wall ball set, HYROX simulation, etc.
-- **`scaling-library.md`** — every scaling rule the club uses, organized by station. The default reference Coaching Coach pulls from.
+- **`scaling-library.md`** — every scaling rule the club uses, organized by station. The default reference for the `block-builder` skill.
 
 ## Block files
 
@@ -87,7 +87,7 @@ A single file with every scaling rule the club applies. Format:
 - **`block-builder` writes to `blocks/`** when generating new training blocks.
 - **`class-brief` (roadmap)** reads the active block + scaling library to draft today's class brief.
 - **`scaling-options` skill** pulls from `scaling-library.md` when [PARTNER_NAME] asks for scaling on a specific workout.
-- **Coaching Coach** reads the active block to answer programming questions in context.
+- **your AI** reads the active block to answer programming questions in context.
 
 ## Hard rules
 

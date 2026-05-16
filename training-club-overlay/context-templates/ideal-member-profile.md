@@ -8,7 +8,7 @@ generated_by: claude-code
 
 # Ideal Member Profile — [CLUB_NAME]
 
-> Filled during kick-off Section B+ (Customer / Member). Marketing Coach reads this before drafting any inquiry response, trial follow-up, or member-acquisition content.
+> Filled during kick-off Section B+ (Customer / Member). Your AI reads this before drafting any inquiry response, trial follow-up, or member-acquisition content.
 
 ## Who they actually are
 
@@ -59,9 +59,9 @@ generated_by: claude-code
 - "The First-Racer" — wants HYROX as a goal, never done a fitness event
 - "The Crossfit Refugee" — over the cult vibe, wants the format without the dogma
 - "The Endurance Convert" — runner/cyclist looking for strength + functional work
-Each archetype has slightly different language + entry points. Marketing Coach considers archetype when drafting.
+Each archetype has slightly different language + entry points. Your AI considers archetype when drafting.
 -->
 
 ## How to identify which archetype a new inquiry is
 
-<!-- 2-3 questions or signals that surface in initial conversation — helps Marketing Coach + [PARTNER_NAME] route the response appropriately. -->
+<!-- 2-3 questions or signals that surface in initial conversation — helps your AI + [PARTNER_NAME] route the response appropriately. -->

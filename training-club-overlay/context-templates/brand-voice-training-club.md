@@ -8,7 +8,7 @@ generated_by: claude-code
 
 # Brand Voice Guide — [CLUB_NAME]
 
-> Filled during kick-off Section B (Voice). This is the constitution Marketing Coach (and any drafter subagent) reads before EVERY public-facing draft.
+> Filled during kick-off Section B (Voice). This is the constitution the Content subagent reads before EVERY public-facing draft.
 
 ## The one-line principle
 <!-- If [CLUB_NAME] were a person walking into a room, what's the energy? One sentence. -->
@@ -36,7 +36,7 @@ generated_by: claude-code
 <!-- "Crush your goals," "transform your life," "fitness journey," "best version of yourself" — list YOUR banned phrases, with reasons. -->
 
 ### Brands whose copy makes us cringe
-<!-- 2-3 specific brands. WHY they grate — feeds Marketing Coach's negative training. -->
+<!-- 2-3 specific brands. WHY they grate — feeds your AI's negative training. -->
 
 ## Three reference brands we'd kill for
 <!-- 3 brands whose copy we genuinely admire. WHY each one — what specifically lands. -->
@@ -47,7 +47,7 @@ generated_by: claude-code
 <!-- Specific over generic. Names matter. Anchors to their actual achievement. -->
 
 ### When inviting someone to come back (retention message)
-<!-- Warm, specific, no pressure, makes it easy to say yes — see Community Coach's `member-checkin-draft` skill for examples. -->
+<!-- Warm, specific, no pressure, makes it easy to say yes — see the `member-checkin-draft` skill for examples. -->
 
 ### When responding to a new inquiry
 <!-- Match their tone. Hot lead = fast and specific. Curious browser = patient and educational. -->

@@ -35,8 +35,8 @@ generated_by: claude-code
 
 ## How this connects to programming
 
-The active block in `Programming/blocks/` should be race-anchored. The block's `end_date` matches a date in the upcoming race list. Coaching Coach uses this connection to anchor block design.
+The active block in `Programming/blocks/` should be race-anchored. The block's `end_date` matches a date in the upcoming race list. The `block-builder` skill uses this connection to anchor block design.
 
 ## How this connects to content
 
-Marketing Coach uses the race calendar as the editorial spine. Race-week comms are scheduled, race recaps land Monday post-race, race signups become content milestones.
+your AI uses the race calendar as the editorial spine. Race-week comms are scheduled, race recaps land Monday post-race, race signups become content milestones.

@@ -1,30 +1,30 @@
-# HTC Kick-off Additions
+# Training Club Kick-off Additions
 
-> Layered on top of the Personal kit's kick-off SKILL.md. The HTC-flavored kick-off adds three new section variants and reframes a few existing ones. AI reads this file during HTC install Stage 8.
+> Layered on top of the Personal kit's kick-off SKILL.md. The Training Club-flavored kick-off adds three new section variants and reframes a few existing ones. AI reads this file during Training Club install Stage 8.
 
 ---
 
 ## How to use this file
 
-When invoking the kick-off skill on an HTC install, the AI:
+When invoking the kick-off skill on an Training Club install, the AI:
 
 1. Reads the Personal kick-off SKILL.md as baseline
 2. Reads this file's overrides
-3. Runs the kick-off with these HTC variants applied
+3. Runs the kick-off with these Training Club variants applied
 
 The Personal kick-off has sections A (Infrastructure), B (Voice), C (Projects), C+ (People/Companies/Goals/Constraints/Working style), D (What I won't do), E (First task), F (Going forward).
 
-The HTC version replaces or augments these:
+The Training Club version replaces or augments these:
 
-| Section | Personal kit version | HTC version |
+| Section | Personal kit version | Training Club version |
 |---|---|---|
 | A | Infrastructure & safety | **A** Infrastructure & safety + **A+** Club basics |
-| B | Voice interview (Deluxe 100Q / Express 5Q) | **B (HTC)** Voice interview tuned for operator + member-facing voices |
-| C | Active projects | **C (HTC)** Active fronts (programming block, content cadence, member retention focus) |
-| C+ | People + Companies + Goals + Constraints + Working style | **C+ (HTC)** Coaches + Members + Race calendar + Goals + Constraints |
+| B | Voice interview (Deluxe 100Q / Express 5Q) | **B (Training Club)** Voice interview tuned for operator + member-facing voices |
+| C | Active projects | **C (Training Club)** Active fronts (programming block, content cadence, member retention focus) |
+| C+ | People + Companies + Goals + Constraints + Working style | **C+ (Training Club)** Coaches + Members + Race calendar + Goals + Constraints |
 | D | What I won't do | (same as Personal) |
-| E | First real task | **E (HTC)** First HTC task — usually a draft check-in or content batch |
-| F | Going forward | (same as Personal, with HTC framing) |
+| E | First real task | **E (Training Club)** First Training Club task — usually a draft check-in or content batch |
+| F | Going forward | (same as Personal, with Training Club framing) |
 
 ---
 
@@ -43,38 +43,38 @@ Save to `vault/_context/club-about.md` once template is filled in.
 
 Confirm with:
 
-> "✅ Got the basics. From here, I know [CLUB_NAME] is a [N-year-old] HYROX Training Club in [city] with roughly [N] members. Moving on."
+> "✅ Got the basics. From here, I know [CLUB_NAME] is a [N-year-old] Training Club in [city] with roughly [N] members. Moving on."
 
 ---
 
-## Section B (HTC) — Voice interview (replaces Personal Section B)
+## Section B (Training Club) — Voice interview (replaces Personal Section B)
 
-The Personal kit's voice interview has two paths (B-Deluxe 100Q + B-Express 5Q). For HTC, both paths are available, but the EXPRESS questions are HTC-specific. Replace Personal B-Express questions with these 5:
+The Personal kit's voice interview has two paths (B-Deluxe 100Q + B-Express 5Q). For Training Club, both paths are available, but the EXPRESS questions are Training Club-specific. Replace Personal B-Express questions with these 5:
 
-### B1 (HTC) — The club's energy
-> "If [CLUB_NAME] walked into a room, what's the energy? Not generic 'welcoming and motivating' — be specific. Are you the gym that runs on irreverent humor? Quiet competence? Loud and proud? Family-feel? Pick the WORDS that distinguish you from any other HTC."
+### B1 (Training Club) — The club's energy
+> "If [CLUB_NAME] walked into a room, what's the energy? Not generic 'welcoming and motivating' — be specific. Are you the gym that runs on irreverent humor? Quiet competence? Loud and proud? Family-feel? Pick the WORDS that distinguish you from any other Training Club."
 
-### B2 (HTC) — The ideal member
+### B2 (Training Club) — The ideal member
 > "Tell me about your actual member — not your dream member, but the person who's already at your gym and would be devastated if you closed tomorrow. Where do they shop? What do they do for work? What did they do BEFORE they came to you?"
 
-### B3 (HTC) — Brands you'd kill for tonally
+### B3 (Training Club) — Brands you'd kill for tonally
 > "Three brands — could be fitness, could be anywhere — whose copy you'd genuinely admire. When you read their stuff, you think 'yes — that's the world [CLUB_NAME] should live in.' Examples that work: TYR's race ads, Nike's race-day social, BarBend's coaching tone."
 
-### B4 (HTC) — Other HTCs whose tone is wrong for yours
-> "Two HTCs or fitness brands whose tone GRATES on you. Doesn't have to be HYROX-specific. What's specifically wrong about it?"
+### B4 (Training Club) — Other Training Clubs whose tone is wrong for yours
+> "Two Training Clubs or fitness brands whose tone GRATES on you. Doesn't have to be HYROX-specific. What's specifically wrong about it?"
 
-### B5 (HTC) — Banned words and tropes
+### B5 (Training Club) — Banned words and tropes
 > "Words, phrases, or patterns that — if I ever wrote them in a draft for [CLUB_NAME] — would make you reject the whole draft. The fitness-industry banalities you cringe at. List as many as come to mind."
 
 Same as Personal Express: 5 questions, drafts get pasted into `vault/Brand/Voice guide.md`, `Reference brands.md`, `Do-not-use list.md`.
 
-**Note on Deluxe path:** the 100-question interview is mostly the same as the Personal version — the questions about beliefs, taste, voice, writing mechanics all apply to operators just like creators. About 15 of the 100 questions get HTC-specific overrides (the ones about "writing for clients" become "writing for members," etc.). Use judgment.
+**Note on Deluxe path:** the 100-question interview is mostly the same as the Personal version — the questions about beliefs, taste, voice, writing mechanics all apply to operators just like creators. About 15 of the 100 questions get Training Club-specific overrides (the ones about "writing for clients" become "writing for members," etc.). Use judgment.
 
 ---
 
-## Section C (HTC) — Active fronts (replaces Personal Section C)
+## Section C (Training Club) — Active fronts (replaces Personal Section C)
 
-For HTC operators, the analog of "active projects" is **active fronts of the operation**:
+For Training Club operators, the analog of "active projects" is **active fronts of the operation**:
 
 Ask:
 
@@ -93,7 +93,7 @@ Capture verbatim where possible. These three answers seed:
 
 ---
 
-## Section C+ (HTC) — Coaches, Members, Races (replaces Personal Section C+)
+## Section C+ (Training Club) — Coaches, Members, Races (replaces Personal Section C+)
 
 After Section C, if [PARTNER_NAME] still has energy:
 
@@ -113,13 +113,13 @@ If they go through:
 
 **Races:** append to `Events/race-calendar.md` under "Upcoming HYROX races," with members signed up where known.
 
-If they skip: mark `.kick-off-deferred-htc-cplus` flag. The wrap-up skill nudges to fill these within the first week.
+If they skip: mark `.kick-off-deferred-training-club-cplus` flag. The wrap-up skill nudges to fill these within the first week.
 
 ---
 
-## Section E (HTC) — First HTC task (replaces Personal Section E)
+## Section E (Training Club) — First Training Club task (replaces Personal Section E)
 
-Instead of the generic "what's your most annoying admin task," ask HTC-specific:
+Instead of the generic "what's your most annoying admin task," ask Training Club-specific:
 
 > "Last thing before we wrap onboarding — let's actually use this thing together. Pick one:
 >
@@ -138,11 +138,11 @@ After it ships:
 
 ---
 
-## Section F (HTC) — Going forward
+## Section F (Training Club) — Going forward
 
-Same Personal kit framing PLUS one HTC-specific add:
+Same Personal kit framing PLUS one Training Club-specific add:
 
-> "**Three things to take with you, plus one HTC-specific:**
+> "**Three things to take with you, plus one Training Club-specific:**
 >
 > 1. **Talk to me like a colleague, not Google.** Full sentences, full context.
 >
@@ -158,9 +158,9 @@ Same Personal kit framing PLUS one HTC-specific add:
 
 ---
 
-## Hard rules for HTC kick-off
+## Hard rules for Training Club kick-off
 
-- **HTC operators are time-poor.** If they want to skip Section C+, accept immediately. No nudging.
+- **Training Club operators are time-poor.** If they want to skip Section C+, accept immediately. No nudging.
 - **Race dates are facts.** Never invent. If they say "I think Copenhagen is in October," verify with WebFetch from `hyrox.com/events` or ask them to confirm before saving the date.
 - **Member privacy starts now.** Member files created during kick-off ship with appropriate privacy: status_reasons that they shared are fine; gossip from other coaches is not.
 - **Voice guide gets re-read before EVERY future draft.** Drill this hard in Section F so they know the voice file matters.

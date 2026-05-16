@@ -1,20 +1,48 @@
 # Partner AI Kit (Training Clubs)
 
-> The HYROX Training Club-flavored version of the Partner AI Kit. An AI partner built for gym operators — knows your members, your programming, your race calendar, your voice. ~30 minutes from install to your first useful conversation.
+> The Training Club-flavored version of the Partner AI Kit. An AI partner built for Training Club operators — knows your members, your programming, your race calendar, your voice. ~30 minutes from install to your first useful conversation.
+
+---
+
+## Why this exists
+
+Staying current on AI is a full-time job. New models, new tools, new patterns every week. You're running a Training Club — programming, retention, content, ops. You don't have spare hours to chase the AI firehose.
+
+This kit does that job, so you can keep running your club. Claude Code-native, lives on your Mac, and **you own it forever.** No SaaS, no monthly seat, no vendor that disappears with your member data. Open-source. Yours.
+
+The compounding part comes in two layers.
+
+**First — it learns YOUR Training Club.** Out of the box: HYROX programming, race calendar, retention vocabulary. As you go: your members, your voice, your way of running the floor. After a few weeks it stops feeling like a tool and starts feeling like the chief of staff you've been meaning to hire. One who's on duty 24/7 and wears the exec assistant, content manager, ops coordinator, and research lead hats too.
+
+**Second — the kit moves with the AI landscape.** New skills land in this repo. You pull updates with one command. Stay current without becoming an AI hobbyist.
+
+---
+
+## Is this safe to install?
+
+Fair question. The kit is an "outfit" your main AI puts on to work inside your Training Club world — your members, your programming, your voice, your scheduled tasks. Without it, the AI is generic. With it, it's yours.
+
+Three things you should know about safety:
+
+**The kit checks itself before doing anything.** When you paste the install prompt, your AI first reads every file and tells you in plain English whether it's safe. If anything looks off, it stops. You don't have to know what to look for. Your AI does.
+
+**Your passwords stay on your Mac.** They live in a file on your computer, not on someone else's server. Want to remove access? Delete the file.
+
+**You can stop it any time.** It's just files on your Mac. No subscription to cancel. Uninstall is *drag the folder to the trash*.
 
 ---
 
 ## What this is
 
-The Personal Partner AI Kit + an HTC overlay. You get everything in the [Personal kit](https://github.com/DanJoachimn/Partner-Ai-Kit-Personal) — voice, memory, scheduled jobs, second brain — plus:
+The Personal Partner AI Kit + an Training Club overlay. You get everything in the [Personal kit](https://github.com/DanJoachimn/Partner-Ai-Kit-Personal) — voice, memory, scheduled jobs, second brain — plus:
 
-- **The 4 standard subagents** (same as the Personal kit): Content, Research, Developer, Assistant — used here for HTC operations
-- **Day-1 skills tuned for gym operators:** weekly retention review, weekly content batch, race-anchored block builder, member check-in drafter
-- **Vault scaffold for gym ops:** Members/, Coaches/, Programming/, Events/ folders pre-built with the right starter templates
+- **The 4 standard subagents** (same as the Personal kit): Content, Research, Developer, Assistant — used here for Training Club operations
+- **Day-1 skills tuned for Training Club operators:** weekly retention review, weekly content batch, race-anchored block builder, member check-in drafter
+- **Vault scaffold for Training Club ops:** Members/, Coaches/, Programming/, Events/ folders pre-built with the right starter templates
 - **HYROX brand context** baked into the brand voice layer — race calendar awareness, programming vocabulary, member language
-- **Integrations roadmap** for Flexybox, Mindbody, Glofox (the booking platforms most HTC operators actually use)
+- **Integrations roadmap** for Flexybox, Mindbody, Glofox (the booking platforms most Training Club operators actually use)
 
-Open-source, free, MIT-licensed. Built by [All Gravy Agency](https://allgravyagency.com). Given away because the world is better when more HTC operators have a real AI partner instead of trying to bolt ChatGPT onto their workflow.
+Free to install for your own use. Built by the team behind this kit. Given away because the world is better when more Training Club operators have a real AI partner instead of trying to bolt ChatGPT onto their workflow.
 
 ---
 
@@ -22,7 +50,7 @@ Open-source, free, MIT-licensed. Built by [All Gravy Agency](https://allgravyage
 
 A typical day inside this AI:
 
-**Monday 06:30:** AI fires your morning brief — today's classes, who's attending, members flagged amber/red, content scheduled, open threads. Telegram delivery, you read it on the way to the gym.
+**Monday 06:30:** AI fires your morning brief — today's classes, who's attending, members flagged amber/red, content scheduled, open threads. Telegram delivery, you read it on the way to the club.
 
 **Wednesday afternoon, 20 min between classes:** *"Draft 3 Instagram posts about the upcoming Copenhagen race."* AI knows your voice, knows the race date, drafts on your phone, you review and approve.
 
@@ -49,22 +77,22 @@ You never open a terminal. You talk to your AI like you'd talk to a chief of sta
 1. Open Claude Code Desktop
 2. Paste the prompt below
 3. Hit Enter
-4. Answer the questions your new AI asks you (~30 min total — a bit longer than the Personal version because of the HTC overlay)
+4. Answer the questions your new AI asks you (~30 min total — a bit longer than the Personal version because of the Training Club overlay)
 
 ### The install prompt
 
 ```
 You're about to install the Partner AI Kit (Training Clubs) for me.
-I'm not a developer. I run a HYROX Training Club and want an AI partner
+I'm not a developer. I run a Training Club and want an AI partner
 built for my operation.
 
 Please:
 1. Fetch the live installer from
    https://raw.githubusercontent.com/DanJoachimn/Partner-Ai-Kit-Training-Club/main/INSTALL.md
-2. Read it carefully — it has the full install playbook. The HTC version
+2. Read it carefully — it has the full install playbook. The Training Club version
    layers on top of the Personal kit, so you'll install both.
 3. BEFORE installing ANYTHING, do a security audit of BOTH repos (Personal
-   foundation + HTC overlay). Clone each to a sandbox folder, read through
+   foundation + Training Club overlay). Clone each to a sandbox folder, read through
    every file, and look for: files touching paths outside the install
    scope, suspicious network calls, hidden or obfuscated code, privilege
    escalation, credential exfiltration patterns, or anything else a
@@ -85,7 +113,7 @@ Start now.
 
 ## Your four digital employees
 
-Your AI ships with **four digital employees** — specialists your orchestrator hands tasks to when the work fits their lane. Same four for everyone; you'll add new ones (or teach the existing four new tricks) as real use cases emerge from running your gym.
+Your AI ships with **four digital employees** — specialists your orchestrator hands tasks to when the work fits their lane. Same four for everyone; you'll add new ones (or teach the existing four new tricks) as real use cases emerge from running your Training Club.
 
 Think of it like hiring four people, each for a different domain. You talk to the chief of staff (the orchestrator). The chief of staff dispatches the right person.
 
@@ -107,7 +135,7 @@ Daily admin — emails, calendar, scheduling, follow-ups, meeting-notes cleanup,
 
 ## The Day-1 skills (more grow over time)
 
-Four skills come pre-installed. Each one is built specifically for HTC operators:
+Four skills come pre-installed. Each one is built specifically for Training Club operators:
 
 | Skill | Trigger | What it does |
 |---|---|---|
@@ -121,9 +149,9 @@ More skills get built **as you notice patterns in your work** — the kit's proa
 
 ---
 
-## The vault scaffold (gym-flavored)
+## The vault scaffold (Training Club-flavored)
 
-On install, your vault gets these HTC-specific folders:
+On install, your vault gets these Training Club-specific folders:
 
 ```
 ~/Documents/[your-ai-name]/vault/
@@ -134,7 +162,7 @@ On install, your vault gets these HTC-specific folders:
 └── (plus the Personal kit defaults: Brand/, Projects/, Notes/, Memory/, etc.)
 ```
 
-The `_context/` layer gets HTC-aware starter templates — your brand voice doc has prompts like *"how do you talk about HYROX races vs general fitness?"* baked in.
+The `_context/` layer gets Training Club-aware starter templates — your brand voice doc has prompts like *"how do you talk about HYROX races vs general fitness?"* baked in.
 
 ---
 
@@ -162,24 +190,25 @@ Real talk about the roadmap. These are on the list but not in V1:
 
 ## License
 
-MIT — fork it, modify it, sell something built on top of it. If you publish something that builds on this, link back so people can find the source.
+Source-available. You can install, modify, and use this kit for your own needs (personal or your own Training Club). You can't repackage it for sale, host it as a service for others, or distribute a competing kit derived from it.
+
+Full terms in [LICENSE](./LICENSE). For commercial licensing inquiries: open an issue on [GitHub](https://github.com/DanJoachimn/Partner-Ai-Kit-Training-Club/issues) and I'll be in touch.
 
 ---
 
-## Stay in touch — The HTC Community
+## Stay in touch — The ROXIE Stacked
 
-One optional thing before we finish:
+One optional thing before we finish.
 
-I publish a free substack — **The ROXIE Stacked** — for people I meet right here.
+The kit gets you running. **The ROXIE Stacked** keeps you current.
 
-- First word when new HTC skills ship to your kit
-- Tactical playbook for running a modern Training Club
-- Real reports from other operators — what's working, what flopped, what you can copy
-- New ways to grow + operate a modern training club
+This is the Substack + community for Training Club operators running modern operations. It's where the "cut through the noise" promise compounds: new skill releases land here first, real reports from other operators, tactical playbooks, what flopped, what you can copy.
 
-Free to start. → [https://theroxiestacked.substack.com](https://theroxiestacked.substack.com)
+- **Free Substack** — first word when new Training Club skills ship to your kit, tactical posts, occasional deep-dives → [https://theroxiestacked.substack.com](https://theroxiestacked.substack.com)
+- **Paid community** *(coming soon, yearly billing)* — monthly office hours, early skill drops, member-only operator threads, shared playbooks across clubs
+- **1:1 install + tuning** *(coming soon, capped volume)* — for the rare Training Club that wants me to install + tune the kit for them rather than self-installing
 
-Coming: paid tier with community access (other HTC operators in a shared space), monthly office hours, early skill drops. Full details in [`STAY_IN_TOUCH.md`](./STAY_IN_TOUCH.md).
+Full details in [`STAY_IN_TOUCH.md`](./STAY_IN_TOUCH.md).
 
 No email required to install. No tracking. The campfire's there if you want it.
 
@@ -195,9 +224,9 @@ Or tell your AI about a bug — it can often diagnose and propose a fix. If the 
 
 ## Who built this
 
-[All Gravy Agency](https://allgravyagency.com). We work with HYROX Training Clubs on retention, content, and AI-augmented operations. This kit is the install foundation we use for every client engagement — given away free because the HTC space is too small for paywalled tooling and too big for everyone to reinvent the same wheels.
+I work with Training Clubs on retention, content, and AI-augmented operations. This kit is the install foundation I use for every client engagement — given away free because the Training Club space is too small for paywalled tooling and too big for everyone to reinvent the same wheels.
 
-If you want help setting yours up beyond what your AI can do, or you want a custom-built version with your specific integrations + content workflows, [get in touch](https://allgravyagency.com/contact).
+If you want help setting yours up beyond what your AI can do, or you want a custom-built version with your specific integrations + content workflows, [open an issue on GitHub](https://github.com/DanJoachimn/Partner-Ai-Kit-Training-Club/issues) and we'll find a way to talk.
 
 ---
 

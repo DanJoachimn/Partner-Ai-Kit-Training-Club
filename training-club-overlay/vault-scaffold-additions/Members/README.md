@@ -59,7 +59,7 @@ training_focus: "HYROX Copenhagen Oct 14" | "general fitness" | "first race"
 
 - **Before drafting any check-in:** read the member's file. No file = ask [PARTNER_NAME] before drafting.
 - **Weekly retention review:** scans every file's `status` field to classify into traffic-light buckets.
-- **Before [PARTNER_NAME] has a real conversation with a member:** Community Coach reads the file and surfaces context in one paragraph.
+- **Before [PARTNER_NAME] has a real conversation with a member:** your AI reads the file and surfaces context in one paragraph.
 - **When something noteworthy happens to a member:** AI appends to the Interaction log (with [PARTNER_NAME]'s confirmation if it's a meaningful change).
 
 ## Hard rules

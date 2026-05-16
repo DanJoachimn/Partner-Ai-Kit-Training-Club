@@ -1,6 +1,6 @@
 ---
 name: block-builder
-description: Generate a race-anchored training block (4 / 8 / 12 weeks) ending at a specific HYROX race date. Includes weekly periodization (base → build → peak → taper), session-by-session work, scaling options (Pro / RX / Scaled), and benchmark sessions every 3 weeks. Invoked when [PARTNER_NAME] says "build me a [N]-week block ending at HYROX Copenhagen," "draft a race block for [member]," "what should our programming look like for the next 8 weeks." Coaching Coach owns this skill.
+description: Generate a race-anchored training block (4 / 8 / 12 weeks) ending at a specific HYROX race date. Includes weekly periodization (base → build → peak → taper), session-by-session work, scaling options (Pro / RX / Scaled), and benchmark sessions every 3 weeks. Invoked when [PARTNER_NAME] says "build me a [N]-week block ending at HYROX Copenhagen," "draft a race block for [member]," "what should our programming look like for the next 8 weeks."
 ---
 
 # Block Builder — race-anchored training blocks

@@ -1,6 +1,6 @@
 ---
 type: context
-client_of: HYROX Training Club
+client_of: Training Club
 created: YYYY-MM-DD
 updated: YYYY-MM-DD
 status: stub
@@ -25,8 +25,8 @@ generated_by: claude-code
 - **Facility size:**
 - **Equipment:** [Rowers, sleds, KBs, wall balls, sandbags — anything notable]
 
-## What makes this club distinct from other HTCs
-<!-- The 1-3 things that genuinely differentiate this club from other HYROX Training Clubs. Not generic ("great community"). Specific. -->
+## What makes this club distinct from other Training Clubs
+<!-- The 1-3 things that genuinely differentiate this club from other Training Clubs. Not generic ("great community"). Specific. -->
 
 ## Membership shape
 - **Active members:** [count, even rough]
