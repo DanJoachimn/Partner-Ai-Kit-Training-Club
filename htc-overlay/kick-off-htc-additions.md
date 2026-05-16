@@ -152,6 +152,8 @@ Same Personal kit framing PLUS one HTC-specific add:
 >
 > 4. **The five subagents work in the background.** When you ask for a draft, Content handles it; for a deep look-up, Research; for anything code-touching, Developer; for daily admin and follow-ups, Assistant; for visual / UX work — landing pages, social graphics, podcast art, design critique — Design steps in (Refero-grounded so it doesn't produce AI-slop). You always talk to me — they sit behind me. Over time you'll notice which one fires for what.
 >
+> 5. **Image and video generation is available** if you opt in to Phase 12E (fal.ai's `genmedia` CLI — sign up at fal.ai, top up $5–10 in credits, install the binary in ~10 min). Both Content and Design can then generate header images, race-day social graphics, athlete shots, or short cinematic clips on demand. Each artifact costs $0.01–$0.50 depending on the model. Optional, not core — only install if your content cadence needs imagery.
+>
 > That's it. Welcome to working with the team."
 
 ---
