@@ -68,15 +68,29 @@ You never open a terminal. You talk to your AI like you'd talk to a chief of sta
 
 **Prerequisites:**
 
-The first three are obvious. The last two aren't, but they make the install dramatically smoother:
+Three obvious ones plus two that aren't obvious — but the two non-obvious ones are **half the magic**. Don't skip them.
+
+**The obvious three:**
 
 1. **A Mac** running macOS 14 or later
 2. **A Claude subscription** (any tier — Pro covers it)
 3. **Claude Code Desktop** installed → [download here](https://claude.com/code)
-4. **"Computer use" turned ON inside Claude Code Desktop** — so your AI can open System Settings for you, screenshot to verify things are wired up, and click through native apps during install. Toggle is in Claude Code's settings under *Capabilities* (look for "Computer use" or "Control my computer"). Without this, you'll have to do those steps by hand and tell the AI what you saw.
-5. **The Claude Chrome extension** installed and connected — so your AI can fill out web forms for you (Telegram bot creation, ElevenLabs signup, Granola onboarding, club CRM logins, etc.) instead of asking you to navigate and copy-paste yourself. [Install it from the Chrome Web Store](https://chromewebstore.google.com/search/Claude). After installing, click the extension icon once in Chrome so it pairs with Claude Code.
 
-If you skip 4 and 5, the install still works — you'll just be doing more clicking and typing yourself. The AI will tell you what to do step by step either way.
+**The two that turn the AI from chatbot into agent:**
+
+4. **"Computer use" turned ON inside Claude Code Desktop.** Toggle is in **Settings → Capabilities** (look for *"Computer use"* or *"Control my computer"*). Grant Screen Recording + Accessibility permissions when prompted.
+
+5. **The Claude Chrome extension** installed + paired. [Get it from the Chrome Web Store](https://chromewebstore.google.com/search/Claude). After install, click the extension icon once in Chrome so it pairs with Claude Code.
+
+**Why those two matter — it's the aha-moment, not just smoothness.**
+
+A chatbot says *"open System Settings and turn on iCloud Drive."* A partner **opens System Settings for you, takes a screenshot, points at the toggle.** A chatbot says *"go to granola.ai and create an account."* A partner **opens the page, fills the form, navigates the onboarding.** The first time your AI does that during this install — and there will be a dozen moments — is when the partnership stops feeling like a metaphor.
+
+This matters even more for Training Club ops: club CRMs, member portals, your scheduling tool, ClassPass, Stripe — they're all in the browser. An agent that can navigate them with you is on a different planet from one that can't.
+
+Without computer use + Chrome extension: you still get a working Partner AI, but every visual moment becomes *"tell me what you see"* and every web flow becomes *"navigate here, click this, copy that."* Smart chatbot. Not an agent.
+
+If you genuinely can't enable them (corporate-locked Mac, no Chrome), the install will still complete — just in manual mode. But if you can enable them, do.
 
 **The install:**
 
