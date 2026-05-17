@@ -93,6 +93,68 @@ Then continue to Stage 0.
 
 ---
 
+## Stage 0b — Connect a few apps to your AI (~5 min, BEFORE the greeting)
+
+Computer use + Chrome ext are the agent's hands. **Connectors are the agent's reach** — they let your AI read your inbox, see your calendar, look at your docs, take notes. Same theme as Stage 0a: this is the difference between a smart chatbot and an agent that actually lives in your stack.
+
+For Training Club operators specifically, these four are where the agent earns its keep on day one: member-facing email threads in Gmail, class schedules in Calendar, member docs (waivers, programming briefs) in Drive, scratch notes in Apple Notes. Future connectors (club CRM, ClassPass, your scheduling tool) layer on top.
+
+### Probe what's already connected (silently first)
+
+Inspect the available tool list for known connector suffixes:
+
+| Service | Tool suffix to look for |
+|---|---|
+| Gmail | `__search_threads`, `__list_labels`, `__create_draft` |
+| Google Calendar | `__list_events`, `__create_event`, `__list_calendars` |
+| Google Drive | `__list_recent_files`, `__read_file_content`, `__search_files` |
+| Apple Notes | `__add_note`, `__get_note_content`, `__list_notes` |
+
+If a connector is already wired → skip its pitch. If missing → include it in the pitch list.
+
+### The pitch (verbatim or close)
+
+> "While we're still in setup mode, four quick connector adds — your AI's reach into the apps you already live in. Each takes about a minute. Skip any you don't actually use.
+>
+> | App | What you'll be able to ask after connecting |
+> |---|---|
+> | **Gmail** | *'what trial inquiries came in today?'* / *'draft a reply to the new member I missed last week'* |
+> | **Calendar** (Google or Apple) | *'what's the class schedule for tomorrow?'* / *'block 90 min next Tuesday for programming review'* |
+> | **Drive** (Google or iCloud) | *'pull up the waiver template'* / *'find the supplier deck from the kettlebell rep'* |
+> | **Apple Notes** | *'read my note from the coach sync last week'* / *'add a note: [content]'* |
+>
+> How to add each: in Claude Code Desktop, click your profile (top right) → **Settings → Connectors** (sometimes labeled *'MCP servers'*). Tap **Add** on each one you want. When a browser tab opens for the Google OAuth screen, I'll watch through the Chrome extension and confirm when each is paired."
+
+### Walk it through
+
+For each connector the operator wants to add:
+1. Tell them which menu item to click
+2. When the OAuth browser tab opens, use the Chrome extension to confirm the page loaded; remind them to pick the right Google account (operators often have a personal Gmail + a club Gmail — make sure they pick the club one)
+3. After OAuth, attempt a no-op call (`list_labels` / `list_calendars` / `list_recent_files` / `list_notes`) to verify the connector returns data
+4. Confirm in chat: *"Gmail connected to your club account. I can see your labels."*
+
+If a connector errors out → suggest they re-run the Connect flow once; if it errors again, mark deferred and move on.
+
+### If operator skips some or all
+
+> "Got it. The install runs fine without these. After we're done, just say *'connect my Gmail'* (or *'…my calendar'*, etc.) anytime and I'll walk you through it then. Doesn't have to be today."
+
+Log which were deferred so the wrap-up skill can nudge once after a few days:
+
+```bash
+echo "connectors-deferred: $LIST_OF_SKIPPED" >> ~/Documents/[AI_NAME]/.first-run-log.txt
+```
+
+### Hard rules for this stage
+
+- **Don't gate the install on connectors.** Some operators don't use Gmail, can't connect work-Mac accounts, etc.
+- **Pick what the operator uses, not what's "complete."** No point connecting Gmail if they live in iCloud Mail.
+- **For multi-account operators (personal + club Gmail), confirm which to connect.** Wrong account choice mid-OAuth is the most common failure mode here.
+- **One nudge max post-install.** Wrap-up skill checks the deferred log once after 3 days, suggests adding any still-missing, then never again.
+- **Verify each connector after enabling** via a no-op call.
+
+---
+
 ## Stage 0 — Greeting + tone-setting (~1 min)
 
 Open with Training Club context. Set expectations.

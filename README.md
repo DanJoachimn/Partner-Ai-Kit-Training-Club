@@ -92,6 +92,8 @@ Without computer use + Chrome extension: you still get a working Partner AI, but
 
 If you genuinely can't enable them (corporate-locked Mac, no Chrome), the install will still complete — just in manual mode. But if you can enable them, do.
 
+**Plus: connectors (the agent's reach).** During install your AI will offer to connect 4 starter apps in ~5 minutes: **Gmail, Calendar (Google or Apple), Drive (Google or iCloud), Apple Notes.** Day-one wins for Training Club operators: *"what trial inquiries came in today?"*, *"what's the class schedule for tomorrow?"*, *"pull up the waiver template"*, *"add a note from the coach sync."* Skip any you don't use. Multi-account operators (personal + club Gmail) — your AI will help you pick the right account at OAuth time so you don't connect the wrong inbox.
+
 **The install:**
 
 1. Open Claude Code Desktop
